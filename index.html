@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-</head>
-<body>
-    <div class="flex flex-col justify-center items-center h-screen">
-  <div class="border-double border-8 border-indigo-600 bg-gradient-to-r from-cyan-500 to-blue-500  w-80 rounded-md shadow-lg">
-    <div class="p-4">
-      <input type="text" class="w-full text-right py-2 px-3 rounded-md border border-gray-300 mb-3" placeholder="0" readonly>
-      <div class="grid grid-cols-4 gap-2">
-        <button class="py-2 rounded-md text-white bg-gray-400 hover:bg-gray-500" >%</button>
-        <button class="py-2 rounded-md text-white bg-red-500 hover:bg-red-600" >Del</button>
-        <button class="col-span-2 py-2 rounded-md text-white bg-orange-500 hover:bg-blue-600" >Clear</button>
-        <button class="py-2 rounded-md text-white bg-gray-400 hover:bg-gray-500" >/</button>
-        <button class="py-2 rounded-md text-white bg-gray-800 hover:bg-gray-900" >7</button>
-        <button class="py-2 rounded-md text-white bg-gray-800 hover:bg-gray-900" >8</button>
-        <button class="py-2 rounded-md text-white bg-gray-800 hover:bg-gray-900" >9</button>
-        <button class="py-2 rounded-md text-white bg-gray-400 hover:bg-gray-500" >X</button>
-        <button class="py-2 rounded-md text-white bg-gray-800 hover:bg-gray-900" >4</button>
-        <button class="py-2 rounded-md text-white bg-gray-800 hover:bg-gray-900" >5</button>
-        <button class="py-2 rounded-md text-white bg-gray-800 hover:bg-gray-900" >6</button>
-        <button class="py-2 rounded-md text-white bg-gray-400 hover:bg-gray-500" >-</button>
-        <button class="py-2 rounded-md text-white bg-gray-800 hover:bg-gray-900" >1</button>
-        <button class="py-2 rounded-md text-white bg-gray-800 hover:bg-gray-900" >2</button>
-        <button class="py-2 rounded-md text-white bg-gray-800 hover:bg-gray-900" >3</button>
-        <button class="py-2 rounded-md text-white bg-gray-400 hover:bg-gray-500" >+</button>
-        <button class="col-span-2 py-2 rounded-md text-white bg-gray-800 hover:bg-gray-900" >0</button>
-        <button class="py-2 rounded-md text-white bg-gray-800 hover:bg-gray-900" >.</button>
-        <button class="py-2 rounded-md text-white bg-gray-400 hover:bg-gray-500" >√</button>
-        <button class="py-2 rounded-md text-white bg-gray-800 hover:bg-gray-900" >+/-</button>
-        <button class="col-span-2 py-2 rounded-md text-white bg-green-500 hover:bg-green-600" >=</button>
+    <title>Calculator by Leokanette Cailing</title>
+  </head>
+  <body class="justify-center items-center flex flex-col bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+
+
+    <div id="container" class=" justify-center items-center p-12 ">
+        <div class="font-bold pb-2">SIMPLE CALCULATOR USING TAILWINDCSS</div>    
+      <div id="calculator" class=" border-doub le border-8 border-indigo-600 bg-gradient-to-r from-green-500 to-blue-500  p-6 rounded-md shadow-lg grid grid-cols-4 gap-3 " style="width:50vh">
+       
+        <input type="text" id="inputBox" class="col-span-4  text-right py-6 px-6 rounded-lg border border-gray-300 mb-3 text-2xl font-bold" placeholder="0" />
+           
+                
+
+                <button id="button operator" class="py-2 rounded-md text-2xl text-black font-bold bg-yellow-400 hover:bg-yellow-500 h-14 ">%</button>
+                <button id="button operator" class="py-2 rounded-md text-2xl text-white font-bold bg-red-500 hover:bg-red-600   h-14 ">DEL</button>
+                <button id="button operator" class="col-span-2 py-2 rounded-md text-2xl text-white font-bold bg-orange-500 hover:bg-blue-600  h-14 ">AC</button>
+                
+                <button id="button operator" class="py-2 rounded-md text-2xl text-black font-bold bg-yellow-400 hover:bg-yellow-500  h-14">/</button>
+                <button id="button" class="py-2 rounded-md text-2xl text-yellow-500 font-bold bg-gray-800 hover:bg-gray-900">7</button>
+                <button id="button" class="py-2 rounded-md text-2xl text-yellow-500 font-bold bg-gray-800 hover:bg-gray-900">8</button>
+                <button id="button" class="py-2 rounded-md text-2xl text-yellow-500 font-bold bg-gray-800 hover:bg-gray-900">9</button>
+
+                <button id="button operator" class="py-2 rounded-md text-2xl text-black font-bold bg-yellow-400 hover:bg-yellow-500  h-14">x</button>
+                <button id="button" class="py-2 rounded-md text-2xl text-yellow-500 font-bold bg-gray-800 hover:bg-gray-900">4</button>
+                <button id="button" class="py-2 rounded-md text-2xl text-yellow-500 font-bold bg-gray-800 hover:bg-gray-900">5</button>
+                <button id="button" class="py-2 rounded-md text-2xl text-yellow-500 font-bold bg-gray-800 hover:bg-gray-900">6</button>
+
+                <button id="button operator" class="py-2 rounded-md text-2xl text-black font-bold bg-yellow-400 hover:bg-yellow-500  h-14">-</button>
+                <button id="button" class="py-2 rounded-md text-2xl text-yellow-500 font-bold bg-gray-800 hover:bg-gray-900">1</button>
+                <button id="button" class="py-2 rounded-md text-2xl text-yellow-500 font-bold bg-gray-800 hover:bg-gray-900">2</button>
+                <button id="button" class="py-2 rounded-md text-2xl text-yellow-500 font-bold bg-gray-800 hover:bg-gray-900">3</button>
+
+                <button id="button operator" class="py-2 rounded-md text-2xl text-black font-bold bg-yellow-400 hover:bg-yellow-500 h-14">+</button>
+                <button id="button" class="py-2 rounded-md text-2xl text-yellow-500 font-bold bg-gray-800 hover:bg-gray-900">00</button>
+                <button id="button" class="col-span-2 py-2 text-2xl rounded-md text-yellow-500 font-bold bg-gray-800 hover:bg-gray-900">0</button>
+            
+                <button id="button" class="py-2 rounded-md text-2xl text-black font-bold bg-yellow-400 hover:bg-yellow-500  h-14" >√</button>
+                <button id="button" class="py-2 rounded-md text-2xl text-yellow-500 font-bold bg-gray-800 hover:bg-gray-900" >.</button>
+                <button id="button equalBtn" class="col-span-2 py-2 rounded-md text-2xl text-white font-bold bg-green-500 hover:bg-green-600">=</button>
+                
+           
       </div>
     </div>
-  </div>
-</div>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
